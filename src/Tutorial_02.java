@@ -17,15 +17,24 @@ public class Tutorial_02 {
       }
 
       for(int i = 0; i <arr.length; i++){
-          arr[j] = arr[i];
-          j++;
+          if(arr[i] != 0) {
+              newArr[j] = arr[i];
+              j++;
+          }
       }
     }
 
-    public static void print(int[] newArr){
+    private static void print(int[] newArr){
 
         for( int element : newArr){
             System.out.print(element + " ");
         }
     }
+
+
+    //Declaring a variable or parameter type		int[] arr;
+    //Using the whole array	                    	print(arr);
+    //Using a single element inside the array		int x = arr[0];
+
+    //In one line: Use public for the main entry point, and private for all its helper methods. Your code does this perfectly.
 }
